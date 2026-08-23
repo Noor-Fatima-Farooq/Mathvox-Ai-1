@@ -1,7 +1,6 @@
 import { setUserProfile } from "./chatStorage";
 
-const BASE_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8080";
-
+const BASE_URL = import.meta.env.VITE_API_URL || "https://mathvox-ai-production.up.railway.app";
 /** Load name & email from database for the logged-in user. */
 export const syncUserProfileFromServer = async () => {
   const user_id = localStorage.getItem("user_id");
