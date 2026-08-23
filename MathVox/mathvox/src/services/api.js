@@ -1,6 +1,6 @@
 import { setUserProfile } from "./chatStorage";
 
-const BASE_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8080";
+const BASE_URL = import.meta.env.VITE_API_URL || "/api";
 
 /** Load name & email from database for the logged-in user. */
 export const syncUserProfileFromServer = async () => {
